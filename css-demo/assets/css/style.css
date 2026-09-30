@@ -21,3 +21,19 @@ html {
   white-space: nowrap;
   width: 1px;
 }
+
+/* My color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
+
+/* My font stack: 
+For the <head> of my html: 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+CSS class for a variable style:
+.parkinsans-<uniquifier> {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
