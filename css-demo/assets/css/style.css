@@ -22,6 +22,17 @@ html {
   width: 1px;
 }
 
+body{
+  font-family: "Parkinsans", sans-serif;
+}
+
+header.primary{
+  background-color: #E6B0FF;
+  color:#ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 10px #640D8C;
+}
+
 /* My color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
 
 /* My font stack: 
@@ -33,7 +44,7 @@ For the <head> of my html:
 CSS class for a variable style:
 .parkinsans-<uniquifier> {
   font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  font-optical-sizing: auto; - NOT NEEDED
+  font-weight: <weight>; - NOT NEEDED
+  font-style: normal; - NOT NEEDED
 }*/
