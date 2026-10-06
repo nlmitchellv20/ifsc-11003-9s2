@@ -55,6 +55,14 @@ nav.primary ul{
   padding: 0;  
 }
 
+nav.primary ul li a{
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 7.5px;
+  display: block;
+  border: 1px solid #640D8C;
+  color: #ffffff;
+}
+
 /* My color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
 
 /* My font stack: 
