@@ -104,13 +104,24 @@ nav.primary ul li a:hover{
   line-height: 2.5;
 }
 
+#practice h2 {
+  color:#8218b4;
+  border-bottom:#1f052c  1.5px dotted;
+}
+
+#recent-posts h2 {
+  color:#8218b4;
+  border-bottom:#1f052c  1.5px dotted;
+}
+
 #blog {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-
+  padding-bottom: 20px;
+  border-bottom:#1f052c 0.5px solid;
 }
 
 #blog figure {
@@ -135,11 +146,43 @@ nav.primary ul li a:hover{
 }
 
 #blog a{
-  color: #640D8C;;
+  color: #640D8C;
 }
 
 
 
+aside[aria-label="Sidebar"]{
+background-color: #796d7f;
+  color:#ffffff;
+  text-align: none;
+  text-shadow: 1px 1px 10px #640D8C;
+  padding: 40px; /* 40px top and bottom, 0 left and right */
+}
+
+ aside div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  aside div.container a:last-child{
+   color:#ffffff;
+   display:block;
+   margin-top: 10px;
+   text-align:right;
+  }
+
+  aside .widget footer{
+    display: none;
+  }
+
+  footer.primary{
+    background-color: #bda9c6;
+    color:#ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 10px #640D8C;
+    padding: 40px; /* 40px top and bottom, 0 left and right */
+  }
 
 /* ---------------Media Queries----------------- */
 
@@ -155,8 +198,7 @@ nav.primary ul li a:hover{
   }
   }
 
-  
-
+ 
 /* ---------------My Notes----------------- */
 /* Color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
 
