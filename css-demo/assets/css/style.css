@@ -7,7 +7,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
- 
+
+/* ---------------Responsive Images----------------- */
+img{
+  max-width: 100%;
+}
  
 /* Skip link utility: hidden until focused */
 .visually-hidden {
@@ -39,7 +43,7 @@ body{
 }
 
 header.primary{
-  background-color: #E6B0FF;
+  background-color: #bda9c6;
   color:#ffffff;
   text-align: center;
   text-shadow: 1px 1px 10px #640D8C;
@@ -91,16 +95,67 @@ nav.primary ul li a:hover{
   box-shadow: 1px 1px 10px #640D8C;
 }
 
+#content h2 {
+  color:#8218b4;
+  border-bottom:#1f052c  1.5px dotted;
+}
+
+#content p {
+  line-height: 2.5;
+}
+
+#blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+
+#blog figure {
+  margin: 0;
+}
+
+#blog .post {
+  box-shadow:1px 1px 10px #640D8C;
+  padding: 10px;
+  gap: 50px;
+  font-size: 0.8rem;
+  flex: 1;
+}
+
+#blog h2 {
+  flex: 0 0 100%;
+}
+
+#blog time.post-date, #blog figcaption {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+#blog a{
+  color: #640D8C;;
+}
+
+
+
 
 /* ---------------Media Queries----------------- */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { /*breakpoint; 500px is the width of the screen */
 
   nav.primary ul{
     flex-direction: column;
     gap: 5px;
   }
+
+  #blog {
+    flex-direction: column;
   }
+  }
+
+  
 
 /* ---------------My Notes----------------- */
 /* Color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
