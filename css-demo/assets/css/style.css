@@ -22,6 +22,17 @@ html {
   width: 1px;
 }
 
+/* ---------------Utility Classes----------------- */
+.container{
+  width:80vw;
+  margin: 40px auto;
+}
+
+
+
+
+/* ---------------Global Styles----------------- */
+
 body{
   font-family: "Parkinsans", sans-serif;
   margin: 0;
@@ -51,21 +62,50 @@ header.primary .subtitle{
 }
 
 nav.primary ul{
+  padding: 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav.primary ul li {
   list-style-type: none; /* Remove bullets from list */
-  padding: 0;  
+  margin-bottom: 10px;
+  flex: 1; /* Allow list items to grow and shrink equally */
 }
 
 nav.primary ul li a{
   background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 10px #640D8C;
   padding: 5px 7.5px;
   display: block;
-  border: 1px solid #640D8C;
+  border: 3.5px groove #640D8C;
+  border-radius: 22px;
   color: #ffffff;
+  transition: .5s;
 }
 
-/* My color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
+nav.primary ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 10px #640D8C;
+}
 
-/* My font stack: 
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 500px) {
+
+  nav.primary ul{
+    flex-direction: column;
+    gap: 5px;
+  }
+  }
+
+/* ---------------My Notes----------------- */
+/* Color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
+
+/* Font stack: 
 For the <head> of my html: 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
