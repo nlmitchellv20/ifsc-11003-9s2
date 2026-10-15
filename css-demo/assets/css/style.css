@@ -104,16 +104,6 @@ nav.primary ul li a:hover{
   line-height: 2.5;
 }
 
-#practice h2 {
-  color:#8218b4;
-  border-bottom:#1f052c  1.5px dotted;
-}
-
-#recent-posts h2 {
-  color:#8218b4;
-  border-bottom:#1f052c  1.5px dotted;
-}
-
 #blog {
   display: flex;
   flex-direction: row;
@@ -149,7 +139,23 @@ nav.primary ul li a:hover{
   color: #640D8C;
 }
 
+#practice h2 {
+  color:#8218b4;
+  border-bottom:#1f052c  1.5px dotted;
+  padding-top: 30px;
+}
 
+#practice p {
+  line-height: 2.5;
+}
+
+#practice p img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  
+}
 
 aside[aria-label="Sidebar"]{
 background-color: #796d7f;
