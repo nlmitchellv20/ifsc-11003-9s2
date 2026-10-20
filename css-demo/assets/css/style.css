@@ -45,6 +45,9 @@ header.primary{
   text-align: center;
   text-shadow: 1px 1px 10px #640D8C;
   padding: 40px; /* 40px top and bottom, 0 left and right */
+  background-image: url('assets/img/flowers.jpg');
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 header.primary a{
@@ -142,6 +145,11 @@ nav.primary ul li a:hover{
   padding-top: 30px;
 }
 
+#practice h3 {
+  border-left:#1f052c 7.5px solid;
+  padding: 5px 0 5px 10px;
+}
+
 #practice p {
   line-height: 2.5;
 }
@@ -237,13 +245,14 @@ background-color: #796d7f;
   color:#ffffff;
   text-align: none;
   text-shadow: 1px 1px 10px #640D8C;
-  padding: 40px; /* 40px top and bottom, 0 left and right */
+  padding: 20px 0; /* 40px top and bottom, 0 left and right */
 }
 
  aside div.container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 50px;
   }
 
   aside div.container a:last-child{
@@ -272,6 +281,10 @@ background-color: #796d7f;
   nav.primary ul{
     flex-direction: column;
     gap: 5px;
+  }
+
+  .container{
+    width:90vw;
   }
 
   #blog {
