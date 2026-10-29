@@ -246,7 +246,7 @@ background-color: #796d7f;
   padding: 20px 0; /* 40px top and bottom, 0 left and right */
 }
 
- aside div.container{
+ aside .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
