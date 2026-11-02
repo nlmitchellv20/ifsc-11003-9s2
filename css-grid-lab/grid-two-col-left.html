@@ -33,6 +33,30 @@
       max-width: 80vw;
       margin: 20px auto;
     }
+
+    main {
+      grid-template-columns: 1fr 3fr;
+    }
+
+    header.primary {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    #content {
+      grid-area: 2 / 2 / 3 / 2;
+    }
+
+    #blog {
+      grid-area: 3 / 2 / 4 / 2;
+    }
+
+    aside {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    footer.primary {
+      grid-area: 4 / 1 / 5 / 3;
+    }
   </style>
 
 </head>
@@ -69,3 +93,4 @@
 </body>
 
 </html>
+
