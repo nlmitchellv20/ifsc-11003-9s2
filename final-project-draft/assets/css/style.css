@@ -1,0 +1,309 @@
+/* ---------------Box Sizing----------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------------Responsive Images----------------- */
+img{
+  max-width: 100%;
+}
+ 
+/* Skip link utility: hidden until focused */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* ---------------Utility Classes----------------- */
+.container{
+  width:80vw;
+  margin: 40px auto;
+}
+
+/* ---------------Global Styles----------------- */
+
+body{
+  font-family: "Parkinsans", sans-serif;
+  margin: 0;
+}
+
+header.primary{
+  background-color: #bda9c6;
+  color:#ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 10px #640D8C;
+  padding: 40px; /* 40px top and bottom, 0 left and right */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ad9ec6' fill-opacity='0.7'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+header.primary a{
+  color: #ffffff;
+  text-decoration: none; /* Remove underline from links */
+  }
+
+header.primary h1{
+  font-size: 2.7rem;
+  margin: 0;
+}
+
+header.primary .subtitle{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+nav.primary ul{
+  padding: 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav.primary ul li {
+  list-style-type: none; /* Remove bullets from list */
+  margin-bottom: 10px;
+  flex: 1; /* Allow list items to grow and shrink equally */
+}
+
+nav.primary ul li a{
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 10px #640D8C;
+  padding: 5px 7.5px;
+  display: block;
+  border: 3.5px groove #640D8C;
+  border-radius: 22px;
+  color: #ffffff;
+  transition: .5s;
+}
+
+nav.primary ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 10px #640D8C;
+}
+
+#content h2 {
+  color:#8218b4;
+  border-bottom:#1f052c  1.5px dotted;
+}
+
+#content p {
+  line-height: 2.5;
+}
+
+#blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 20px;
+  border-bottom:#1f052c 0.5px solid;
+}
+
+#blog figure {
+  margin: 0;
+}
+
+#blog .post {
+  box-shadow:2px 2px 10px #640D8C;
+  padding: 10px;
+  gap: 50px;
+  font-size: 0.8rem;
+  flex: 1;
+}
+
+#blog h2 {
+  flex: 0 0 100%;
+}
+
+#blog time.post-date, #blog figcaption {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+#blog a{
+  color: #640D8C;
+}
+
+#practice h2 {
+  color:#8218b4;
+  border-bottom:#1f052c  1.5px dotted;
+  padding-top: 30px;
+}
+
+#practice h3 {
+  border-left:#1f052c 7.5px solid;
+  padding: 5px 0 5px 10px;
+}
+
+#practice p {
+  line-height: 2.5;
+}
+
+#practice p img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow:2px 2px 10px #640D8C;
+}
+
+#practice table {
+  box-shadow:2px 2px 10px #640D8C;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#practice table caption {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#practice th {
+  background-color: #584e5d;
+  text-shadow: 1px 1px 10px #640D8C;
+  color: #ffffff;
+}
+
+#practice tr:nth-child(even) {
+  background-color: #e1dfe1;
+}
+
+#practice tr:hover {
+  background-color: #817f81;
+}
+
+#practice th, #practice td {
+  border: 1px solid #640D8C;
+  padding: 5px;
+  text-align: center;
+}
+
+#practice ol {
+  color: #640D8C;
+  border-top:#1f052c  1.5px dotted;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#practice ul {
+  color: #640D8C;
+  padding-bottom: 20px;
+}
+
+#practice dl {
+  color: #640D8C;
+  border-bottom:#1f052c  1.5px dotted;
+  padding-bottom: 20px;
+
+}
+
+#practice dt {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#practice dd {
+  margin-left: 5px;
+}
+
+#practice blockquote {
+  border-left: 5px solid #640D8C;
+  padding: 20px 40px;
+  margin:40px 80px;
+  border-radius: 30px;
+  background-color:#796d7f;
+  color:#e1dfe1;
+  font-style: italic;
+  text-shadow: 1px 1px 10px #640D8C;
+}
+
+#practice blockquote cite {
+  display: block;
+  text-align: right;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+aside[aria-label="Sidebar"]{
+background-color: #796d7f;
+  color:#ffffff;
+  text-align: none;
+  text-shadow: 1px 1px 10px #640D8C;
+  padding: 20px 0; /* 40px top and bottom, 0 left and right */
+}
+
+ aside .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  aside div.container a:last-child{
+   color:#ffffff;
+   display:block;
+   margin-top: 10px;
+   text-align:right;
+  }
+
+  aside .widget footer{
+    display: none;
+  }
+
+  footer.primary{
+    background-color: #bda9c6;
+    color:#ffffff;
+    text-align: right;
+    text-shadow: 1px 1px 10px #640D8C;
+    padding: 40px; /* 40px top and bottom, 0 left and right */
+  }
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 500px) { /*breakpoint; 500px is the width of the screen */
+
+  nav.primary ul{
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .container{
+    width:90vw;
+  }
+
+  #blog {
+    flex-direction: column;
+  }
+  }
+
+ 
+/* ---------------My General Notes----------------- */
+/* Color palette: #640D8C, #451A59, #CB77F2, #E6B0FF, #F6E3FF */
+
+/* Font stack: 
+For the <head> of my html: 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+CSS class for a variable style:
+.parkinsans-<uniquifier> {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto; - NOT NEEDED
+  font-weight: <weight>; - NOT NEEDED
+  font-style: normal; - NOT NEEDED
+}*/
